@@ -1,0 +1,288 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/*NAVBAR*/
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    color: #ff4d4d;
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav{
+    color: #2D2D2D;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+      
+}
+
+nav a{
+    font-size: 18px;
+    display: flex;
+    padding-right: 10px;
+    color: #2D2D2D;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: #ff4d4d;
+}
+
+
+
+/* buttons */
+
+button{
+
+    padding:10px 20px;
+
+    border:none;
+
+    background:#ff6600;
+
+    color:white;
+
+    cursor:pointer;
+
+    border-radius:5px;
+
+}
+
+button:hover{
+
+    background:#ff4500;
+
+}
+
+
+/* container */
+
+.container{
+
+    width:90%;
+
+    margin:auto;
+
+}
+
+
+/*FOOTER*/
+footer {
+    background-color: #2D2D2D; /* Classic Appetizer Theme */
+    color: #FFFFFF;
+    width: 100%;             /* Force full width */
+    padding: 40px 20px;      /* Inner spacing */
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* 3. Style the internal elements */
+footer h3 {
+    color: #FF4B2B;          
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;               /* Space between links */
+}
+
+.footer-links a {
+    color: #B2BEC3;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    color: #636E72;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+/*TOGGLE*/
+
+.toggle{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:600px){
+
+.auth-card{
+width:90%;
+}
+
+.landing-content h1{
+font-size:40px;
+}
+
+
+.navbar{
+    justify-content: space-between;
+    display: flex;
+    padding: auto;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    color: #FF4B2B;
+    font-size: 27px;
+    padding-left: 15px;
+    justify-content: space-between;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav{
+    color: #FF4B2B;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+nav a{
+    font-size: 18px;
+    color: rgb(75, 70, 70);
+    text-decoration: none;
+    margin-left: 20px;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7px;
+}
+
+.logo svg{
+    width: 30px;
+    height: 30px;
+}
+
+nav svg{
+    gap: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.hero{
+    margin-top: 100px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: smaller;
+}
+
+.hero input{
+    border: 1px solid rgb(131, 130, 130);
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.hero button{
+    background-color: #FF4B2B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: auto;
+}
+
+.cart-item{
+   
+    width: 70%;
+    background-color: #E0E0E0;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+
+
+.footer{
+    background-color: #2D2D2D; 
+    color: #FFFFFF;
+    width: 100%;             
+    padding: 40px 20px;      
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+} 
+.restaurant-card{
+    width: 300px;
+    background-color: #E0E0E0;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+img{
+  width: 250px;  
+}
+
+nav{
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    width: 200px;
+    text-align: right;
+    right: 0;
+}
+
+nav.active{
+    display: flex;
+}
+.toggle{
+    display: block;
+}
+
+
+}

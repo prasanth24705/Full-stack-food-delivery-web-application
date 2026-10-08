@@ -1,0 +1,125 @@
+/* PROFILE PAGE STYLING */
+
+.profile-container {
+    margin-top: 150px; /* Space for the fixed navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 60vh;
+}
+
+.profile-card {
+    background-color: #E0E0E0; /* Matches your restaurant-card background */
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin-bottom: 300px;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Avatar Circle */
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    border: 3px solid #ff4d4d;
+}
+
+.profile-header h2 {
+    font-size: 28px;
+    color: #2D2D2D;
+    margin-bottom: 5px;
+}
+
+.profile-header p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Detailed Info Section */
+.profile-details {
+    text-align: left;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.profile-details h3 {
+    font-size: 18px;
+    color: #ff4d4d;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item span {
+    color: #777;
+    font-weight: bold;
+}
+
+.detail-item strong {
+    color: #2D2D2D;
+}
+
+/* Logout Button on Profile */
+.logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #e63c3c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media(max-width: 600px) {
+    .profile-container {
+        margin-top: 100px;
+    }
+    
+    .profile-card {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

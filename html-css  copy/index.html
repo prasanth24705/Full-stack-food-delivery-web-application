@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="Assests/css/global.css">
+    <link rel="stylesheet" href="Assests/css/index.css">
+    
+
+</head>
+
+<body>
+
+
+<section class="landing">
+
+    <div class="landing-content">
+        <h1>Food Delivery</h1>
+        <p>Delicious food delivered to your door</p>
+
+        <button onclick="openModal()">Login / Sign Up</button>
+    </div>
+
+</section>
+
+
+<!--LOGIN SIGNUP MODAL -->
+
+<div class="modal" id="authModal">
+
+    <div class="auth-card">
+
+        <span class="close" onclick="closeModal()">×</span>
+
+        <!-- LOGIN FORM -->
+
+        <div id="loginForm">
+
+            <h2>Login</h2>
+
+            <input type="email" id="Email" placeholder="Enter Your Email" required>
+
+            <input type="password" id="Password" placeholder="Password" required>
+
+            <button class="auth-btn" onclick="loginuser()">Login</button>
+
+            <p>
+            Don't have an account?
+            <span onclick="showSignup()">Sign Up</span>
+            </p>
+
+        </div>
+
+
+       <div id="signupForm" style="display:none;">
+    <h2>Sign Up</h2>
+    <input type="text" id="Fullname" placeholder="Full name" required>
+    <input type="email" id="Semail" placeholder="Email (e.g. name@mail.com)" required>
+    <input type="tel" id="Smobile" placeholder="Phone Number (10-15 digits)" required>
+    <input type="password" id="Spassword" placeholder="Password" required>
+    <button class="auth-btn" onclick="signupuser()">Create Account</button>
+    <p>Already have an account? <span onclick="showLogin()">Login</span></p>
+</div>
+
+    </div>
+
+</div>
+
+
+<script src="Assests/script/index.js"></script>
+
+
+
+
+</body>
+</html>

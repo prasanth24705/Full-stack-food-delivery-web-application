@@ -1,0 +1,124 @@
+/* LANDING PAGE */
+
+.landing{
+height:100vh;
+background:linear-gradient(135deg,#ff4d4d,#ff944d);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+}
+
+.landing-content h1{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.landing-content p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.landing-content button{
+padding:12px 25px;
+font-size:16px;
+border:none;
+background:white;
+color:#ff4d4d;
+border-radius:5px;
+cursor:pointer;
+}
+
+.landing-content button:hover{
+background:#f2f2f2;
+}
+
+
+/* MODAL */
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.6);
+
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+
+/* AUTH CARD */
+
+.auth-card{
+background:white;
+padding:40px;
+width:350px;
+
+border-radius:10px;
+
+text-align:center;
+
+position:relative;
+}
+
+
+/* CLOSE BUTTON */
+
+.close{
+position:absolute;
+top:10px;
+right:15px;
+
+font-size:22px;
+cursor:pointer;
+}
+
+
+/* INPUTS */
+
+.auth-card input{
+width:100%;
+padding:10px;
+
+margin:10px 0;
+
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+
+/* BUTTON */
+
+.auth-btn{
+width:100%;
+padding:10px;
+
+background:#ff4d4d;
+color:white;
+
+border:none;
+border-radius:5px;
+
+cursor:pointer;
+margin-top:10px;
+}
+
+.auth-btn:hover{
+background:#e63c3c;
+}
+
+
+/* LINK TEXT */
+
+.auth-card span{
+color:#ff4d4d;
+cursor:pointer;
+font-weight:bold;
+}

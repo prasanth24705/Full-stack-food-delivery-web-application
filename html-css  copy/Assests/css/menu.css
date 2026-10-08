@@ -1,0 +1,58 @@
+/* MENU PAGE */
+
+.menu-item{
+    padding-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-container{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.menu-card{
+    justify-content: center;
+    border-color: #E0E0E0;
+    background-color: #E0E0E0;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.menu-card:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+
+.add-cart{
+    padding: 10px 20px;
+    background-color: #FF4B2B;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.add-cart:hover{
+    opacity: 0.9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item-desc {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+    line-height: 1.2;
+}
+
+.menu-card h3 {
+    margin-bottom: 2px;
+}
